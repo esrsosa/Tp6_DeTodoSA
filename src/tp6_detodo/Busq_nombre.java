@@ -12,11 +12,13 @@ import javax.swing.table.DefaultTableModel;
  * @author Emanuel Sosa
  */
 public class Busq_nombre extends javax.swing.JInternalFrame {
-    private DefaultTableModel modelo= new DefaultTableModel(){
-    public boolean isCellEditable(int f,int c){
-    return false;
-    }
+
+    private DefaultTableModel modelo = new DefaultTableModel() {
+        public boolean isCellEditable(int f, int c) {
+            return false;
+        }
     };
+
     /**
      * Creates new form Busq_nombre
      */
@@ -103,16 +105,17 @@ public class Busq_nombre extends javax.swing.JInternalFrame {
     private void jNombreKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jNombreKeyReleased
         // TODO add your handling code here:
         borrarFilas();
-        for(Producto p:DeTodo.listaProducto){
-            if (p.getDescripcion().startsWith(jNombre.getText())) {
+        for (Producto p : DeTodo.listaProducto) {
+            if (p.getDescripcion().toLowerCase().startsWith(jNombre.getText().toLowerCase())) {
+               
                 modelo.addRow(new Object[]{
-                p.getCodigo(),
+                    p.getCodigo(),
                     p.getDescripcion(),
                     p.getPrecio(),
                     p.getStock()
                 });
             }
-        }   
+        }
     }//GEN-LAST:event_jNombreKeyReleased
 
 
@@ -123,17 +126,18 @@ public class Busq_nombre extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTProductos;
     // End of variables declaration//GEN-END:variables
-public void armarCabecera(){
-modelo.addColumn("Codigo");
-modelo.addColumn("Descripcion");
-modelo.addColumn("Precio");
-modelo.addColumn("Stock");
-jTProductos.setModel(modelo);
-} 
-public void borrarFilas(){
-int filas=jTProductos.getRowCount()-1;
-    for (int f=filas;f>=0;f--) {
-        modelo.removeRow(f);
+public void armarCabecera() {
+        modelo.addColumn("Codigo");
+        modelo.addColumn("Descripcion");
+        modelo.addColumn("Precio");
+        modelo.addColumn("Stock");
+        jTProductos.setModel(modelo);
     }
-}
+
+    public void borrarFilas() {
+        int filas = jTProductos.getRowCount() - 1;
+        for (int f = filas; f >= 0; f--) {
+            modelo.removeRow(f);
+        }
+    }
 }

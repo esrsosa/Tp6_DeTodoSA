@@ -3,10 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp5_agregar_productos/Tp6_detodo/src/tp6_detodo/GestionProductos.java</file>
-            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp5_agregar_productos/Tp6_detodo/src/tp6_detodo/Busq_precio.java</file>
-            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp5_agregar_productos/Tp6_detodo/src/tp6_detodo/DeTodo.java</file>
-            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp5_agregar_productos/Tp6_detodo/src/tp6_detodo/Busq_rubro.java</file>
+            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp6_detodo/Tp6_DeTodo/src/tp6_detodo/Producto.java</file>
+            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp6_detodo/Tp6_DeTodo/src/tp6_detodo/Tp6_detodo.java</file>
+            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp6_detodo/Tp6_DeTodo/src/tp6_detodo/Busq_nombre.java</file>
+            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp6_detodo/Tp6_DeTodo/src/tp6_detodo/GestionProductos.java</file>
+            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp6_detodo/Tp6_DeTodo/src/tp6_detodo/Busq_precio.java</file>
+            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp6_detodo/Tp6_DeTodo/src/tp6_detodo/Categoria.java</file>
+            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp6_detodo/Tp6_DeTodo/src/tp6_detodo/DeTodo.java</file>
+            <file>file:/C:/Users/Emanuel%20Sosa/OneDrive/Documentos/NetBeansProjects/Tp6_detodo/Tp6_DeTodo/src/tp6_detodo/Busq_rubro.java</file>
         </group>
     </open-files>
 </project-private>

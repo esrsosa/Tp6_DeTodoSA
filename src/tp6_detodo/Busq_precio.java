@@ -5,6 +5,7 @@
  */
 package tp6_detodo;
 
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -119,10 +120,13 @@ public class Busq_precio extends javax.swing.JInternalFrame {
     private void jMayorKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jMayorKeyReleased
         // TODO add your handling code here:
     borrarFilas();
+    if(!jMenor.getText().equals("") && !jMayor.getText().isEmpty()){
+        try{
         int nMayor=Integer.parseInt(jMayor.getText());
         int nMenor=Integer.parseInt(jMenor.getText());
+        
         for(Producto p:DeTodo.listaProducto){
-            System.out.println(p.getPrecio());
+       
             if (nMenor <= p.getPrecio() && nMayor >= p.getPrecio() ) {
                 modelo.addRow(new Object[]{
                 p.getCodigo(),
@@ -132,15 +136,22 @@ public class Busq_precio extends javax.swing.JInternalFrame {
                 });
             }
         }   
+        }catch(NumberFormatException e){
+              JOptionPane.showMessageDialog(this, "Error, solo ingresar numeros");
+        }
+    }
     }//GEN-LAST:event_jMayorKeyReleased
 
     private void jMenorKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jMenorKeyReleased
         // TODO add your handling code here:
     borrarFilas();
+      if(!jMenor.getText().equals("") && !jMayor.getText().isEmpty()){
+        try{
         int nMayor=Integer.parseInt(jMayor.getText());
         int nMenor=Integer.parseInt(jMenor.getText());
+        
         for(Producto p:DeTodo.listaProducto){
-            System.out.println(p.getPrecio());
+       
             if (nMenor <= p.getPrecio() && nMayor >= p.getPrecio() ) {
                 modelo.addRow(new Object[]{
                 p.getCodigo(),
@@ -150,6 +161,10 @@ public class Busq_precio extends javax.swing.JInternalFrame {
                 });
             }
         }   
+        }catch(NumberFormatException e){
+              JOptionPane.showMessageDialog(this, "Error, solo ingresar numeros");
+        }
+    }
     }//GEN-LAST:event_jMenorKeyReleased
 
 
